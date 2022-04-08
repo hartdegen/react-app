@@ -1,4 +1,5 @@
 ![image](https://github.com/hartdegen/react-app/blob/practiceBranch/src/petka4.gif)
+![image](https://github.com/hartdegen/react-app/blob/practiceBranch/src/petka4.gif)
 
 # Getting Started with Create React App
 
