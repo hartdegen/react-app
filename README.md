@@ -1,6 +1,6 @@
 ![image](https://github.com/hartdegen/react-app/blob/practiceBranch/src/petka4.gif)
 
-main branch
+practice branch
 
 # Getting Started with Create React App
 
