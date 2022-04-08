@@ -1,9 +1,5 @@
 ![image](https://github.com/hartdegen/react-app/blob/practiceBranch/src/petka4.gif)
-<<<<<<< HEAD
-practice branch
-=======
 main branch
->>>>>>> main
 
 # Getting Started with Create React App
 
