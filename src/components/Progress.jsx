@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // BEGIN
 export default class Progress extends React.Component {

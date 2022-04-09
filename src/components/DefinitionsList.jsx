@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default class DefinitionsList extends React.Component {
   render() {
@@ -14,10 +14,6 @@ export default class DefinitionsList extends React.Component {
       </React.Fragment>
     ));
 
-    return (
-      <dl>
-        {tags}
-      </dl>
-    );
+    return <dl>{tags}</dl>;
   }
 }
