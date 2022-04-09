@@ -4,10 +4,10 @@ import ReactDOM from 'react-dom';
 import Card from './components/Card.jsx';
 
 ReactDOM.render(
-  <Card />,
+  <Card cardTitle="111" text="some text here"/>,
   document.getElementById('container1'),
 );
 ReactDOM.render(
-  <Card />,
+  <Card cardTitle="222"/>,
   document.getElementById('container2'),
 );
