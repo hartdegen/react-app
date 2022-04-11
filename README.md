@@ -1,7 +1,3 @@
-![image](https://github.com/hartdegen/react-app/blob/practiceBranch/src/petka4.gif)
-
-main branch
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
