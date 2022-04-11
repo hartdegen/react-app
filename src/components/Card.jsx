@@ -8,7 +8,7 @@ export default class Card extends React.Component {
           <h4 className="card-title">Card title {this.props.cardTitle}</h4>
           <p className="card-text">{this.props.text}</p>
           <button type="button" className="btn btn-primary">
-            don't click
+            do not click
           </button>
         </div>
       </div>

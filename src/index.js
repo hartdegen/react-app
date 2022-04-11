@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Card from "./components/Card.jsx";
 import DefinitionsList from "./components/DefinitionsList.jsx";
 import Progress from "./components/Progress.jsx";
+import Alert from './components/Alert.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -22,4 +23,9 @@ ReactDOM.render(
 ReactDOM.render(
   <Progress percentage="90" />,
   document.getElementById("container3")
+);
+
+ReactDOM.render(
+  <Alert type="warning" text="do you need some text?" />,
+  document.getElementById('container4'),
 );
