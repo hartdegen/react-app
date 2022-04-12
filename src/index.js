@@ -6,6 +6,7 @@ import DefinitionsList from "./components/DefinitionsList.jsx";
 import Progress from "./components/Progress.jsx";
 import Alert from "./components/Alert.jsx";
 import ListGroup from "./components/ListGroup.jsx";
+import BtnGroup from './components/BtnGroup.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -38,3 +39,8 @@ const dom = (
   </ListGroup>
 );
 ReactDOM.render(dom, document.getElementById("container5"));
+
+ReactDOM.render(
+  <BtnGroup />,
+  document.getElementById('container6'),
+);
