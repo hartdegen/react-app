@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import './index.css';
+import './index.css';
 import Card from "./components/Card.jsx";
 import DefinitionsList from "./components/DefinitionsList.jsx";
 import Progress from "./components/Progress.jsx";
 import Alert from "./components/Alert.jsx";
 import ListGroup from "./components/ListGroup.jsx";
 import BtnGroup from './components/BtnGroup.jsx';
+import Carousel from './components/Carousel.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -43,4 +44,10 @@ ReactDOM.render(dom, document.getElementById("container5"));
 ReactDOM.render(
   <BtnGroup />,
   document.getElementById('container6'),
+);
+
+const images = ['/images/1.jpeg', '/images/2.jpeg', '/images/3.jpeg'];
+ReactDOM.render(
+  <Carousel images={images} />,
+  document.getElementById('container7'),
 );
