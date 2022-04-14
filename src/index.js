@@ -8,6 +8,7 @@ import Alert from "./components/Alert.jsx";
 import ListGroup from "./components/ListGroup.jsx";
 import BtnGroup from './components/BtnGroup.jsx';
 import Carousel from './components/Carousel.jsx';
+import Collapse from './components/Collapse.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -50,4 +51,9 @@ const images = ['/images/1.jpeg', '/images/2.jpeg', '/images/3.jpeg'];
 ReactDOM.render(
   <Carousel images={images} />,
   document.getElementById('container7'),
+);
+
+ReactDOM.render(
+  <Collapse text="collapse me" />,
+  document.getElementById('container8'),
 );
