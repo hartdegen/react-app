@@ -15,3 +15,6 @@ code {
 .d-block {
   height: 200px;
 }
+.solid {
+  border: 1rem solid;
+}

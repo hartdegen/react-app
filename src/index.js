@@ -9,6 +9,7 @@ import ListGroup from "./components/ListGroup.jsx";
 import BtnGroup from './components/BtnGroup.jsx';
 import Carousel from './components/Carousel.jsx';
 import Collapse from './components/Collapse.jsx';
+import MyForm from './components/MyForm.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -56,4 +57,9 @@ ReactDOM.render(
 ReactDOM.render(
   <Collapse text="collapse me" />,
   document.getElementById('container8'),
+);
+
+ReactDOM.render(
+  <MyForm />,
+  document.getElementById('container9'),
 );
