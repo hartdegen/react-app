@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
+
 import './index.css';
 import Card from "./components/Card.jsx";
 import DefinitionsList from "./components/DefinitionsList.jsx";
@@ -11,11 +13,16 @@ import Carousel from './components/Carousel.jsx';
 import Collapse from './components/Collapse.jsx';
 import MyForm from './components/MyForm.jsx';
 import LogComponent from './components/LogComponent.jsx';
+import TodoBox from './components/TodoBox.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
-  document.getElementById("container01")
+  document.getElementById("Card")
 );
+// or new syntax for React 18
+// const container = document.getElementById('Card');
+// const root = createRoot(container);
+// root.render(<Card cardTitle="111" />);
 
 const definitions = [
   { dt: "one", dd: "two", id: Math.random() },
@@ -23,17 +30,17 @@ const definitions = [
 ];
 ReactDOM.render(
   <DefinitionsList data={definitions} />,
-  document.getElementById("container02")
+  document.getElementById("DefinitionsList")
 );
 
 ReactDOM.render(
   <Progress percentage="90" />,
-  document.getElementById("container03")
+  document.getElementById("Progress")
 );
 
 ReactDOM.render(
   <Alert type="warning" text="do you need some text?" />,
-  document.getElementById("container04")
+  document.getElementById("Alert")
 );
 
 const dom = (
@@ -42,30 +49,35 @@ const dom = (
     <p>two</p>
   </ListGroup>
 );
-ReactDOM.render(dom, document.getElementById("container05"));
+ReactDOM.render(dom, document.getElementById("ListGroup"));
 
 ReactDOM.render(
   <BtnGroup />,
-  document.getElementById('container06'),
+  document.getElementById('BtnGroup'),
 );
 
 const images = ['/images/1.jpeg', '/images/2.jpeg', '/images/3.jpeg'];
 ReactDOM.render(
   <Carousel images={images} />,
-  document.getElementById('container07'),
+  document.getElementById('Carousel'),
 );
 
 ReactDOM.render(
   <Collapse text="collapse me" />,
-  document.getElementById('container08'),
+  document.getElementById('Collapse'),
 );
 
 ReactDOM.render(
   <MyForm />,
-  document.getElementById('container09'),
+  document.getElementById('MyForm'),
 );
 
 ReactDOM.render(
   <LogComponent />,
-  document.getElementById('container10'),
+  document.getElementById('LogComponent'),
+);
+
+ReactDOM.render(
+  <TodoBox />,
+  document.getElementById('TodoBox'),
 );
