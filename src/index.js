@@ -10,10 +10,11 @@ import BtnGroup from './components/BtnGroup.jsx';
 import Carousel from './components/Carousel.jsx';
 import Collapse from './components/Collapse.jsx';
 import MyForm from './components/MyForm.jsx';
+import LogComponent from './components/LogComponent.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
-  document.getElementById("container1")
+  document.getElementById("container01")
 );
 
 const definitions = [
@@ -22,17 +23,17 @@ const definitions = [
 ];
 ReactDOM.render(
   <DefinitionsList data={definitions} />,
-  document.getElementById("container2")
+  document.getElementById("container02")
 );
 
 ReactDOM.render(
   <Progress percentage="90" />,
-  document.getElementById("container3")
+  document.getElementById("container03")
 );
 
 ReactDOM.render(
   <Alert type="warning" text="do you need some text?" />,
-  document.getElementById("container4")
+  document.getElementById("container04")
 );
 
 const dom = (
@@ -41,25 +42,30 @@ const dom = (
     <p>two</p>
   </ListGroup>
 );
-ReactDOM.render(dom, document.getElementById("container5"));
+ReactDOM.render(dom, document.getElementById("container05"));
 
 ReactDOM.render(
   <BtnGroup />,
-  document.getElementById('container6'),
+  document.getElementById('container06'),
 );
 
 const images = ['/images/1.jpeg', '/images/2.jpeg', '/images/3.jpeg'];
 ReactDOM.render(
   <Carousel images={images} />,
-  document.getElementById('container7'),
+  document.getElementById('container07'),
 );
 
 ReactDOM.render(
   <Collapse text="collapse me" />,
-  document.getElementById('container8'),
+  document.getElementById('container08'),
 );
 
 ReactDOM.render(
   <MyForm />,
-  document.getElementById('container9'),
+  document.getElementById('container09'),
+);
+
+ReactDOM.render(
+  <LogComponent />,
+  document.getElementById('container10'),
 );
