@@ -14,6 +14,7 @@ import Collapse from './components/Collapse.jsx';
 import MyForm from './components/MyForm.jsx';
 import LogComponent from './components/LogComponent.jsx';
 import TodoBox from './components/TodoBox.jsx';
+import FunctionalComponentCard from './components/FunctionalComponentCard.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -43,13 +44,10 @@ ReactDOM.render(
   document.getElementById("Alert")
 );
 
-const dom = (
-  <ListGroup>
-    <p>one</p>
-    <p>two</p>
-  </ListGroup>
+ReactDOM.render(
+  <ListGroup><p>one</p><p>two</p></ListGroup>, 
+  document.getElementById("ListGroup")
 );
-ReactDOM.render(dom, document.getElementById("ListGroup"));
 
 ReactDOM.render(
   <BtnGroup />,
@@ -80,4 +78,14 @@ ReactDOM.render(
 ReactDOM.render(
   <TodoBox />,
   document.getElementById('TodoBox'),
+);
+
+ReactDOM.render(
+  <FunctionalComponentCard>
+    <FunctionalComponentCard.Body>
+      <FunctionalComponentCard.Title>This is Functional Component</FunctionalComponentCard.Title>
+      <FunctionalComponentCard.Text>/src/components/FunctionalComponentCard.jsx</FunctionalComponentCard.Text>
+    </FunctionalComponentCard.Body>
+  </FunctionalComponentCard>,
+  document.getElementById('FunctionalComponentCard'),
 );
