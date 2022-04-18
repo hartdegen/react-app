@@ -15,6 +15,7 @@ import MyForm from './components/MyForm.jsx';
 import LogComponent from './components/LogComponent.jsx';
 import TodoBox from './components/TodoBox.jsx';
 import FunctionalComponentCard from './components/FunctionalComponentCard.jsx';
+import ContextThemeSwitcher from './components/contextThemeSwitcher/Main.jsx';
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -88,4 +89,9 @@ ReactDOM.render(
     </FunctionalComponentCard.Body>
   </FunctionalComponentCard>,
   document.getElementById('FunctionalComponentCard'),
+);
+
+ReactDOM.render(
+  <ContextThemeSwitcher />,
+  document.getElementById('ContextThemeSwitcher'),
 );
