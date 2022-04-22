@@ -17,6 +17,8 @@ import TodoBox from './components/TodoBox.jsx';
 import FunctionalComponentCard from './components/FunctionalComponentCard.jsx';
 import ContextThemeSwitcher from './components/contextThemeSwitcher/Main.jsx';
 import ComponentModal from './components/modal/Component.jsx';
+import Autocomplete from './components/Autocomplete.jsx';
+
 
 ReactDOM.render(
   <Card cardTitle="111" />,
@@ -100,4 +102,9 @@ ReactDOM.render(
 ReactDOM.render(
   <ComponentModal />,
   document.getElementById('ComponentModal'),
+);
+
+ReactDOM.render(
+  <Autocomplete />,
+  document.getElementById('Autocomplete'),
 );
